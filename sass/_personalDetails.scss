@@ -1,0 +1,51 @@
+.personal-info {
+  display: grid;
+  grid-template-rows: 40% repeat(3, min-content) max-content;
+  justify-items: center;
+  padding: 0 4.2rem;
+  // position: relative;
+
+  &__img {
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    // display: block;
+    border-radius: 7px;
+    transform: translateY(-60%);
+    // position: absolute;
+  }
+
+  &__header {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__role {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+
+  &__social-links {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.social-links {
+  span {
+    display: inline-block;
+  }
+
+  &__icon {
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+}
+
+.bg-grey-light-1 {
+  background-color: $color-grey-light-1;
+}
